@@ -20,6 +20,8 @@ public class CodigoCaixa {
                 System.out.println("Chocolate (150g)");
                 System.out.println("Preço Unitário: R$3,99");
                 break;
+                default:
+                System.out.println("Digite um valor registrado.");
             }
         }
     sc.close();
