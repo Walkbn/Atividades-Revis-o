@@ -90,8 +90,12 @@ public class CodigoCaixa {
                 System.out.println("Pasta de Dente (90g)");
                 System.out.println("Preço Unitário: R$3,50");
                 break;
+                case 2:
+                System.out.println("Saindo do programa.");
+                break;
                 default:
                 System.out.println("Digite um valor registrado.");
+                break;
             }
         }
         sc.close();
