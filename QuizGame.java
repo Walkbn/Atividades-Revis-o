@@ -28,12 +28,21 @@ public class QuizGame {
         System.out.println("Que pena! \nSentimos muito por ter que partir :C");
     }
     else if (opcinicio==1) {
+        int quantiarespostascertas = 0;
         for (int i = 0; i<10; i++) {
             System.out.println(perguntas[i]);
             respostas[i] = sc.next().charAt(0);
         }
-        for (int i = 0; i<10; i++);
+        for (int i = 0; i<10; i++) {
+            if (respostas[i] == gabarito[i]) {
+                quantiarespostascertas++;
+            }
+            System.out.print((i+1) + "° respostas: "+ respostas[i] + " ");
+            System.out.println((i+1) + "° Gabarito: " + gabarito[i] + " ");
+        }
+        System.out.println("Você teve " + quantiarespostascertas + " de 10 acertos.");
     }
     System.out.println("Estamos partindo!");
+    sc.close();
 }
 }
