@@ -41,6 +41,18 @@ public class QuizGame {
             System.out.println((i+1) + "° Gabarito: " + gabarito[i] + " ");
         }
         System.out.println("Você teve " + quantiarespostascertas + " de 10 acertos.");
+        if (quantiarespostascertas==0) {
+            System.out.println("Estude o dobro!");
+        }
+        else if (quantiarespostascertas<3) {
+            System.out.println("Desculpe, mas você tem que melhorar!");
+        } else if (quantiarespostascertas<6) {
+            System.out.println("Boa! Você consegue melhor, tenho certeza!");
+        } else if (quantiarespostascertas<9) {
+            System.out.println("Quase lá! sei que consegue um 10!");
+        } else {
+            System.out.println("Você é incrível!");
+        }
     }
     System.out.println("Estamos partindo!");
     sc.close();
